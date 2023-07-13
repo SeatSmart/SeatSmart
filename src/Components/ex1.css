@@ -1,0 +1,36 @@
+.ex1{
+    background-color: #EE8100;
+    height: 100vh;
+    display: flex;
+    
+}
+h1{
+    text-align: left;
+    padding-left: 2vh;
+    padding-top: 4vh;
+}
+.extype{
+    overflow: hidden;
+    padding-top: 30vh;
+    padding-left: 4vw;
+}
+.typbtn{
+
+    background-color: black;
+    color: #EE8100;
+    padding: 1vh 4vw;
+    border-radius: 30px;
+
+}
+.typbtn:hover{
+    background-color: #B63CF8;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#excelg{
+    padding-top: 30vh;
+    padding-left: 35vw;
+    max-width: 45%;
+    max-height:45%;
+}

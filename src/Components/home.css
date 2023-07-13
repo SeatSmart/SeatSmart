@@ -1,0 +1,32 @@
+.home{
+    background: linear-gradient(to right, #FF9B26 50%, #2D2D2D 50%);
+    color: black;
+}
+.Logo{
+    /* text-align: center; */
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* margin-top: 10%; */
+}
+.Logo img{
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    
+    font-weight: bold;
+    
+}
+#ExamCell{
+    color: black;
+}
+#invigilator{
+    color: #FF9B26;
+    align-items: right;
+}
