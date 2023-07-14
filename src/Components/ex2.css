@@ -11,6 +11,38 @@
     max-height:45%;
 }
 .branch{
+    padding-top: 30vh;
     display: flexbox;
+    align-items: center;
     
+
+}
+.btn{
+    font-weight: bold;
+    padding: 1vh 5vw;
+    background-color: #2D2D2D;
+    color: #B63CF8;
+    border-radius: 30px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+.btn:hover{
+    background-color: #EE8100;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.clscount{
+    padding-top: 65vh;
+    display: flexbox;
+    align-items: center;
+}
+select{
+    font-weight: bold;
+    padding: 1vh 1vw;
+    background-color: #2D2D2D;
+    color: #B63CF8;
+    border-radius: 30px;
+    margin-top: 1vh;
+    margin-left: 1vw;
 }

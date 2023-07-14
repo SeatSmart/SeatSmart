@@ -16,14 +16,16 @@ h1{
 }
 .typbtn{
 
-    background-color: black;
-    color: #EE8100;
+    background-color: #2D2D2D;
+    color: #B63CF8;
     padding: 1vh 4vw;
     border-radius: 30px;
+    margin-top: 1vh;
+    margin-left: 1vw;
 
 }
 .typbtn:hover{
-    background-color: #B63CF8;
+    background-color: #EE8100;
     color: black;
     transition: 0.5s;
     cursor: pointer;

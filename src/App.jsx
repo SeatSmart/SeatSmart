@@ -7,7 +7,7 @@ import Examcell2 from './Components/examcell2';
 function App() {
   return (
     <div>
-      <Examcell2 />
+      <Home />
     </div>
     
   );
