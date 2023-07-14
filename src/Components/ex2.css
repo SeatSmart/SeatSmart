@@ -1,0 +1,16 @@
+.ex2{
+    background-color: #EE8100;
+    height: 100vh;
+    display: flex;
+    
+}
+#excelg{
+    padding-top: 30vh;
+    padding-left: 35vw;
+    max-width: 45%;
+    max-height:45%;
+}
+.branch{
+    display: flexbox;
+    
+}
