@@ -3,6 +3,16 @@ import "./ex3.css"
 const Examcell3 = () => {
     var vacant_cs1=[];var vacant_cs2=[];var vacant_ee1=[];var vacant_ee2=[];var vacant_ec1=[];var vacant_ec2=[];var vacant_ce1=[];var vacant_ce2=[];var vacant_me1=[];var vacant_me2=[];
     const [inputValues, setInputValues] = useState('');
+    const [inputValues_cs1, setInputValues_cs1] = useState('');
+    const [inputValues_cs2, setInputValues_cs2] = useState('');
+    const [inputValues_ee1, setInputValues_ee1] = useState('');
+    const [inputValues_ee2, setInputValues_ee2] = useState('');
+    const [inputValues_ec1, setInputValues_ec1] = useState('');
+    const [inputValues_ec2, setInputValues_ec2] = useState('');
+    const [inputValues_ce1, setInputValues_ce1] = useState('');
+    const [inputValues_ce2, setInputValues_ce2] = useState('');
+    const [inputValues_me1, setInputValues_me1] = useState('');
+    const [inputValues_me2, setInputValues_me2] = useState('');
     const [vacant_cs1Length, setVacant_cs1Length] = useState('');
     const [cs1, setCs1] = useState('');
     const [vacant_cs2Length, setVacant_cs2Length] = useState('');
@@ -26,7 +36,9 @@ const Examcell3 = () => {
 
     useEffect(() => {
         
-    },[cs1,vacant_cs1Length,cs2,vacant_cs2Length,ee1,vacant_ee1Length,ee2,vacant_ee2Length,ec1,vacant_ec1Length,ec2,vacant_ec2Length,ce1,vacant_ce1Length,ce2,vacant_ce2Length,me1,vacant_me1Length,me2,vacant_me2Length]);
+    },[cs1,vacant_cs1Length,cs2,vacant_cs2Length,ee1,vacant_ee1Length,ee2,vacant_ee2Length,ec1,vacant_ec1Length,ec2,vacant_ec2Length,
+        ce1,vacant_ce1Length,ce2,vacant_ce2Length,me1,vacant_me1Length,me2,vacant_me2Length,inputValues_cs1,inputValues_cs2,
+        inputValues_ee1,inputValues_ee2,inputValues_ec1,inputValues_ec2,inputValues_ce1,inputValues_ce2,inputValues_me1,inputValues_me2]);
 
     const handleInputChange_cs1 = (event) => {
         const value = event.target.value;
@@ -36,7 +48,7 @@ const Examcell3 = () => {
     };
     const handleInputvacant_cs1 = (event) =>{
         const value = event.target.value;
-        setInputValues(value);
+        setInputValues_cs1(value);
         vacant_cs1 = value.split(',').map((val) => val.trim());
         console.log(vacant_cs1);
         setVacant_cs1Length(vacant_cs1.length);
@@ -51,7 +63,7 @@ const Examcell3 = () => {
     };
     const handleInputvacant_cs2 = (event) =>{
         const value = event.target.value;
-        setInputValues(value);
+        setInputValues_cs2(value);
         vacant_cs2 = value.split(',').map((val) => val.trim());
         console.log(vacant_cs2);
         setVacant_cs2Length(vacant_cs2.length);
@@ -65,7 +77,7 @@ const Examcell3 = () => {
     };
     const handleInputvacant_ee1 = (event) =>{
         const value = event.target.value;
-        setInputValues(value);
+        setInputValues_ee1(value);
         vacant_ee1 = value.split(',').map((val) => val.trim());
         console.log(vacant_ee1);
         setVacant_ee1Length(vacant_ee1.length);
@@ -80,7 +92,7 @@ const Examcell3 = () => {
     };
     const handleInputvacant_ee2 = (event) =>{
         const value = event.target.value;
-        setInputValues(value);
+        setInputValues_ee2(value);
         vacant_ee2 = value.split(',').map((val) => val.trim(ec2));
         setVacant_ee2Length(vacant_ee2.length);
         // console.log(vacant_cs1Length);
@@ -94,7 +106,7 @@ const Examcell3 = () => {
     };
     const handleInputvacant_ec1 = (event) =>{
         const value = event.target.value;
-        setInputValues(value);
+        setInputValues_ec1(value);
         vacant_ec1 = value.split(',').map((val) => val.trim());
         setVacant_ec1Length(vacant_ec1.length);
         // console.log(vacant_cs1Length);
@@ -108,7 +120,7 @@ const Examcell3 = () => {
     };
     const handleInputvacant_ec2 = (event) =>{
         const value = event.target.value;
-        setInputValues(value);
+        setInputValues_ec2(value);
         vacant_ec2 = value.split(',').map((val) => val.trim());
         console.log(vacant_ec2);
         setVacant_ec2Length(vacant_ec2.length);
@@ -123,7 +135,7 @@ const Examcell3 = () => {
     };
     const handleInputvacant_ce1 = (event) =>{
         const value = event.target.value;
-        setInputValues(value);
+        setInputValues_ce1(value);
         vacant_cs1 = value.split(',').map((val) => val.trim());
         console.log(vacant_ce1);
         setVacant_ce1Length(vacant_ce1.length);
@@ -138,7 +150,7 @@ const Examcell3 = () => {
     };
     const handleInputvacant_ce2 = (event) =>{
         const value = event.target.value;
-        setInputValues(value);
+        setInputValues_ce2(value);
         vacant_ce2 = value.split(',').map((val) => val.trim());
         console.log(vacant_ce2);
         setVacant_ce2Length(vacant_ce2.length);
@@ -153,7 +165,7 @@ const Examcell3 = () => {
     };
     const handleInputvacant_me1 = (event) =>{
         const value = event.target.value;
-        setInputValues(value);
+        setInputValues_me1(value);
         vacant_me1 = value.split(',').map((val) => val.trim());
         console.log(vacant_me1);
         setVacant_me1Length(vacant_me1.length);
@@ -168,7 +180,7 @@ const Examcell3 = () => {
     };
     const handleInputvacant_me2 = (event) =>{
         const value = event.target.value;
-        setInputValues(value);
+        setInputValues_me2(value);
         vacant_me2 = value.split(',').map((val) => val.trim());
         console.log(vacant_me2);
         setVacant_me2Length(vacant_me2.length);
@@ -179,6 +191,15 @@ const Examcell3 = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         setCs1(cs1 - vacant_cs1Length);
+        setCs2(cs2 - vacant_cs2Length);
+        setee1(ee1 - vacant_ee1Length);
+        setee2(ee2 - vacant_ee2Length);
+        setec1(ec1 - vacant_ec1Length);
+        setec2(ec2 - vacant_ec2Length);
+        setce1(ce1 - vacant_ce1Length);
+        setce2(ce2 - vacant_ce2Length);
+        setme1(me1 - vacant_me1Length);
+        setme2(me2 - vacant_me2Length);
     };
     return (
         <div className='ex3'>
@@ -207,7 +228,7 @@ const Examcell3 = () => {
                                 </div>
                             </td>
                             <td>
-                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_cs1} />    
+                                <input className='classlabel' type='text' value={inputValues_cs1} onInput={handleInputvacant_cs1} />    
                             </td>    
                             <td>
                                 <p className='classlabel'>course</p>
@@ -230,7 +251,7 @@ const Examcell3 = () => {
                                 </div>
                             </td>
                             <td>
-                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_cs2} />
+                                <input className='classlabel' type='text' value={inputValues_cs2} onInput={handleInputvacant_cs2} />
                             </td>
                             <td>
                                 <p className='classlabel'>course</p>
@@ -253,7 +274,7 @@ const Examcell3 = () => {
                                 </div>
                             </td>
                             <td>
-                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ec1} />
+                                <input className='classlabel' type='text' value={inputValues_ec1} onInput={handleInputvacant_ec1} />
                             </td>
                             <td>
                                 <p className='classlabel'>course</p>
@@ -276,7 +297,7 @@ const Examcell3 = () => {
                                 </div>
                             </td>
                             <td>
-                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ec2} />
+                                <input className='classlabel' type='text' value={inputValues_ec2} onInput={handleInputvacant_ec2} />
                             </td>
                             <td>
                                 <p className='classlabel'>course</p>
@@ -299,7 +320,7 @@ const Examcell3 = () => {
                                 </div>
                             </td>
                             <td>
-                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ce1} />
+                                <input className='classlabel' type='text' value={inputValues_ce1} onInput={handleInputvacant_ce1} />
                             </td>
                             <td>
                                 <p className='classlabel'>course</p>
@@ -323,7 +344,7 @@ const Examcell3 = () => {
                                 </div>
                             </td>
                             <td>
-                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ce2} />
+                                <input className='classlabel' type='text' value={inputValues_ce2} onInput={handleInputvacant_ce2} />
                             </td>
                             <td>
                                 <p className='classlabel'>course</p>
@@ -346,7 +367,7 @@ const Examcell3 = () => {
                                 </div>
                             </td>
                             <td>
-                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_me1} />
+                                <input className='classlabel' type='text' value={inputValues_me1} onInput={handleInputvacant_me1} />
                             </td>
                             <td>
                                 <p className='classlabel'>course</p>
@@ -369,7 +390,7 @@ const Examcell3 = () => {
                                 </div>
                             </td>
                             <td>
-                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_me2} />
+                                <input className='classlabel' type='text' value={inputValues_me2} onInput={handleInputvacant_me2} />
                             </td>
                             <td>
                                 <p className='classlabel'>course</p>
@@ -392,7 +413,7 @@ const Examcell3 = () => {
                                 </div>
                             </td>
                             <td>
-                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ee1} />
+                                <input className='classlabel' type='text' value={inputValues_ee1} onInput={handleInputvacant_ee1} />
                             </td>
                             <td>
                                 <p className='classlabel'>course</p>
@@ -415,7 +436,7 @@ const Examcell3 = () => {
                                 </div>
                             </td>
                             <td>
-                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ee2} />
+                                <input className='classlabel' type='text' value={inputValues_ee2} onInput={handleInputvacant_ee2} />
                             </td>
                             <td>
                                 <p className='classlabel'>course</p>
