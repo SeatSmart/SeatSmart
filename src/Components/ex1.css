@@ -2,6 +2,7 @@
     background-color: #EE8100;
     height: 100vh;
     display: flex;
+    overflow: auto;
     
 }
 h1{

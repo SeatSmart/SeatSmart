@@ -4,5 +4,6 @@
   margin: 0;
 }
 body{
+  overflow: auto;
   font-family: 'Poppins', sans-serif;
 }

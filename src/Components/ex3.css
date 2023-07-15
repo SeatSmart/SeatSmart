@@ -1,0 +1,32 @@
+.ex3{
+    background-color: #EE8100;
+    height: 100vh;
+    display: block;
+    background-size: 100%;
+    overflow: auto;
+    
+}
+.classlabel{
+    font-weight: bold;
+    padding: 1vh 5vw;
+    background-color: #2D2D2D;
+    color: #B63CF8;
+    border-radius: 30px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+.roll1{
+    font-weight: bold;
+    background-color: #2D2D2D;
+    color: #B63CF8;
+    padding: 1vh 1vw;
+    border-radius: 40px;
+    align-items: center;
+    display: inline-block;
+    margin-left: 2px;
+    
+}
+.roll input{
+    width: 2vw;
+    height: 1vw;
+}

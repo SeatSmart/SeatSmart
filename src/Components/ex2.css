@@ -1,17 +1,19 @@
 .ex2{
     background-color: #EE8100;
     height: 100vh;
-    display: flex;
+    display: block;
+    background-size: 100%;
+    overflow: auto;
     
 }
 #excelg{
-    padding-top: 30vh;
+    padding-top: 5vh;
     padding-left: 35vw;
     max-width: 45%;
     max-height:45%;
 }
 .branch{
-    padding-top: 30vh;
+    padding-top: 10vh;
     display: flexbox;
     align-items: center;
     
@@ -33,9 +35,11 @@
     cursor: pointer;
 }
 .clscount{
-    padding-top: 65vh;
-    display: flexbox;
-    align-items: center;
+    /* padding-top: 66vh; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+
 }
 select{
     font-weight: bold;
@@ -45,4 +49,9 @@ select{
     border-radius: 30px;
     margin-top: 1vh;
     margin-left: 1vw;
+}
+#continue{
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    margin-left: 80vw;
 }
