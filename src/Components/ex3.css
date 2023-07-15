@@ -27,6 +27,11 @@
     
 }
 .roll input{
+    font-weight: bold;
     width: 2vw;
     height: 1vw;
+    align-items: center;
+}
+.classlabel button{
+    font-weight: bold;
 }
