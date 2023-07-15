@@ -26,7 +26,7 @@ const Examcell3 = () => {
 
     useEffect(() => {
         
-    },[cs1,vacant_cs1Length]);
+    },[cs1,vacant_cs1Length,cs2,vacant_cs2Length,ee1,vacant_ee1Length,ee2,vacant_ee2Length,ec1,vacant_ec1Length,ec2,vacant_ec2Length,ce1,vacant_ce1Length,ce2,vacant_ce2Length,me1,vacant_me1Length,me2,vacant_me2Length]);
 
     const handleInputChange_cs1 = (event) => {
         const value = event.target.value;
@@ -40,6 +40,138 @@ const Examcell3 = () => {
         vacant_cs1 = value.split(',').map((val) => val.trim());
         console.log(vacant_cs1);
         setVacant_cs1Length(vacant_cs1.length);
+        // console.log(vacant_cs1Length);
+        
+    };
+    const handleInputChange_cs2 = (event) => {
+        const value = event.target.value;
+        // console.log(value);
+        setCs2(value);
+        // console.log(cs1);
+    };
+    const handleInputvacant_cs2 = (event) =>{
+        const value = event.target.value;
+        setInputValues(value);
+        vacant_cs2 = value.split(',').map((val) => val.trim());
+        console.log(vacant_cs2);
+        setVacant_cs2Length(vacant_cs2.length);
+        // console.log(vacant_cs1Length);ee1
+    };
+    const handleInputChange_ee1 = (event) => {
+        const value = event.target.value;
+        // console.log(value);
+        setee1(value);
+        // console.log(cs1);
+    };
+    const handleInputvacant_ee1 = (event) =>{
+        const value = event.target.value;
+        setInputValues(value);
+        vacant_ee1 = value.split(',').map((val) => val.trim());
+        console.log(vacant_ee1);
+        setVacant_ee1Length(vacant_ee1.length);
+        // console.log(vacant_cs1Length);
+        
+    };
+    const handleInputChange_ee2 = (event) => {
+        const value = event.target.value;
+        // console.log(value);
+        setee2(value);
+        // console.log(cs1);
+    };
+    const handleInputvacant_ee2 = (event) =>{
+        const value = event.target.value;
+        setInputValues(value);
+        vacant_ee2 = value.split(',').map((val) => val.trim(ec2));
+        setVacant_ee2Length(vacant_ee2.length);
+        // console.log(vacant_cs1Length);
+        
+    };
+    const handleInputChange_ec1 = (event) => {
+        const value = event.target.value;
+        // console.log(value);
+        setec1(value);
+        // console.log(cs1);
+    };
+    const handleInputvacant_ec1 = (event) =>{
+        const value = event.target.value;
+        setInputValues(value);
+        vacant_ec1 = value.split(',').map((val) => val.trim());
+        setVacant_ec1Length(vacant_ec1.length);
+        // console.log(vacant_cs1Length);
+        
+    };
+    const handleInputChange_ec2 = (event) => {
+        const value = event.target.value;
+        // console.log(value);
+        setec2(value);
+        // console.log(cs1);
+    };
+    const handleInputvacant_ec2 = (event) =>{
+        const value = event.target.value;
+        setInputValues(value);
+        vacant_ec2 = value.split(',').map((val) => val.trim());
+        console.log(vacant_ec2);
+        setVacant_ec2Length(vacant_ec2.length);
+        // console.log(vacant_cs1Length);
+        
+    };
+    const handleInputChange_ce1 = (event) => {
+        const value = event.target.value;
+        // console.log(value);
+        setce1(value);
+        // console.log(cs1);
+    };
+    const handleInputvacant_ce1 = (event) =>{
+        const value = event.target.value;
+        setInputValues(value);
+        vacant_cs1 = value.split(',').map((val) => val.trim());
+        console.log(vacant_ce1);
+        setVacant_ce1Length(vacant_ce1.length);
+        // console.log(vacant_cs1Length);
+        
+    };
+    const handleInputChange_ce2 = (event) => {
+        const value = event.target.value;
+        // console.log(value);
+        setce2(value);
+        // console.log(cs1);
+    };
+    const handleInputvacant_ce2 = (event) =>{
+        const value = event.target.value;
+        setInputValues(value);
+        vacant_ce2 = value.split(',').map((val) => val.trim());
+        console.log(vacant_ce2);
+        setVacant_ce2Length(vacant_ce2.length);
+        // console.log(vacant_cs1Length);
+        
+    };
+    const handleInputChange_me1 = (event) => {
+        const value = event.target.value;
+        // console.log(value);
+        setme1(value);
+        // console.log(cs1);
+    };
+    const handleInputvacant_me1 = (event) =>{
+        const value = event.target.value;
+        setInputValues(value);
+        vacant_me1 = value.split(',').map((val) => val.trim());
+        console.log(vacant_me1);
+        setVacant_me1Length(vacant_me1.length);
+        // console.log(vacant_cs1Length);
+        
+    };
+    const handleInputChange_me2 = (event) => {
+        const value = event.target.value;
+        // console.log(value);
+        setme2(value);
+        // console.log(cs1);
+    };
+    const handleInputvacant_me2 = (event) =>{
+        const value = event.target.value;
+        setInputValues(value);
+        vacant_me2 = value.split(',').map((val) => val.trim());
+        console.log(vacant_me2);
+        setVacant_me2Length(vacant_me2.length);
         // console.log(vacant_cs1Length);
         
     };
@@ -84,13 +216,221 @@ const Examcell3 = () => {
                                 <p className='classlabel'>{cs1}</p>    
                             </td>         
                         </tr>
+                        <tr>
+                            <td>
+                                <p className='classlabel'>CSE2</p>
+                            </td>
+                            <td>
+                                <div className="roll">
+                                    <p className='roll1'>
+                                        1
+                                    </p>
+                                    to
+                                    <input className='roll1' type="text" value={cs2}  onInput={handleInputChange_cs2} />
+                                </div>
+                            </td>
+                            <td>
+                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_cs2} />
+                            </td>
+                            <td>
+                                <p className='classlabel'>course</p>
+                            </td>
+                            <td>
+                                <p className='classlabel'>{cs2}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='classlabel'>EC1</p>
+                            </td>
+                            <td>
+                                <div className="roll">
+                                    <p className='roll1'>
+                                        1
+                                    </p>
+                                    to
+                                    <input className='roll1' type="text" value={ec1}  onInput={handleInputChange_ec1} />
+                                </div>
+                            </td>
+                            <td>
+                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ec1} />
+                            </td>
+                            <td>
+                                <p className='classlabel'>course</p>
+                            </td>
+                            <td>
+                                <p className='classlabel'>{ec1}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='classlabel'>EC2</p>
+                            </td>
+                            <td>
+                                <div className="roll">
+                                    <p className='roll1'>
+                                        1
+                                    </p>
+                                    to
+                                    <input className='roll1' type="text" value={ec2}  onInput={handleInputChange_ec2} />
+                                </div>
+                            </td>
+                            <td>
+                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ec2} />
+                            </td>
+                            <td>
+                                <p className='classlabel'>course</p>
+                            </td>
+                            <td>
+                                <p className='classlabel'>{ec2}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='classlabel'>CE1</p>
+                            </td>
+                            <td>
+                                <div className="roll">
+                                    <p className='roll1'>
+                                        1
+                                    </p>
+                                    to
+                                    <input className='roll1' type="text" value={ce1}  onInput={handleInputChange_ce1} />
+                                </div>
+                            </td>
+                            <td>
+                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ce1} />
+                            </td>
+                            <td>
+                                <p className='classlabel'>course</p>
+                            </td>
+                            <td>
+                                <p className='classlabel'>{ce1}</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='classlabel'>CE2</p>
+                            </td>
+                            <td>
+                                <div className="roll">
+                                    <p className='roll1'>
+                                        1
+                                    </p>
+                                    to
+                                    <input className='roll1' type="text" value={ce2}  onInput={handleInputChange_ce2} />
+                                </div>
+                            </td>
+                            <td>
+                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ce2} />
+                            </td>
+                            <td>
+                                <p className='classlabel'>course</p>
+                            </td>
+                            <td>
+                                <p className='classlabel'>{ce2}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='classlabel'>ME1</p>
+                            </td>
+                            <td>
+                                <div className="roll">
+                                    <p className='roll1'>
+                                        1
+                                    </p>
+                                    to
+                                    <input className='roll1' type="text" value={me1}  onInput={handleInputChange_me1} />
+                                </div>
+                            </td>
+                            <td>
+                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_me1} />
+                            </td>
+                            <td>
+                                <p className='classlabel'>course</p>
+                            </td>
+                            <td>
+                                <p className='classlabel'>{me1}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='classlabel'>ME2</p>
+                            </td>
+                            <td>
+                                <div className="roll">
+                                    <p className='roll1'>
+                                        1
+                                    </p>
+                                    to
+                                    <input className='roll1' type="text" value={me2}  onInput={handleInputChange_me2} />
+                                </div>
+                            </td>
+                            <td>
+                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_me2} />
+                            </td>
+                            <td>
+                                <p className='classlabel'>course</p>
+                            </td>
+                            <td>
+                                <p className='classlabel'>{me2}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='classlabel'>EE1</p>
+                            </td>
+                            <td>
+                                <div className="roll">
+                                    <p className='roll1'>
+                                        1
+                                    </p>
+                                    to
+                                    <input className='roll1' type="text" value={ee1}  onInput={handleInputChange_ee1} />
+                                </div>
+                            </td>
+                            <td>
+                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ee1} />
+                            </td>
+                            <td>
+                                <p className='classlabel'>course</p>
+                            </td>
+                            <td>
+                                <p className='classlabel'>{ee1}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='classlabel'>EE2</p>
+                            </td>
+                            <td>
+                                <div className="roll">
+                                    <p className='roll1'>
+                                        1
+                                    </p>
+                                    to
+                                    <input className='roll1' type="text" value={ee2}  onInput={handleInputChange_ee2} />
+                                </div>
+                            </td>
+                            <td>
+                                <input className='classlabel' type='text' value={inputValues} onInput={handleInputvacant_ee2} />
+                            </td>
+                            <td>
+                                <p className='classlabel'>course</p>
+                            </td>
+                            <td>
+                                <p className='classlabel'>{ee2}</p>
+                            </td>
+                        </tr>
                     </table>
                     <button type='submit' className='classlabel'>Submit</button>
                 </form>
 
             </div>
         </div>
-    )
+    );
 }
 
 export default Examcell3;
