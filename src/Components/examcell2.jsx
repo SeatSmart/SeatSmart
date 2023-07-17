@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./ex2.css"
 import React, { useState } from 'react';
 const Examcell2 = () => {
@@ -68,7 +69,9 @@ const Examcell2 = () => {
                     </select>
                 </div>
             </div>
-            <button className="btn" id="continue">CONTINUE</button>
+            <Link to="/examcell3">
+                <button className="btn" id="continue">CONTINUE</button>
+            </Link>
            
         </div>
     );

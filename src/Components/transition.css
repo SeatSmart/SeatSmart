@@ -1,0 +1,27 @@
+/* transitions.css */
+
+/* Define the transition effect */
+.page-transition {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Apply the transition only to the content of the page */
+  .page-transition > div {
+    opacity: 1;
+  }
+  
+  /* Hide the page when it is not active (e.g., during page transitions) */
+  .page-exit-active > div {
+    opacity: 0;
+  }
+  
+  /* Define the fade-in effect for the new page */
+  .page-enter-active > div {
+    opacity: 0;
+  }
+  
+  .page-enter-active > div,
+  .page-exit-active > div {
+    transition: opacity 0.3s ease-in-out;
+  }

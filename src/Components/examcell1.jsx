@@ -10,8 +10,12 @@ const Examcell1 = () => {
                 <h2>Exam Type</h2>
                 <br>
                 </br>
-                <button className="typbtn" onClick={""}>Internal</button>
-                <button className="typbtn" onClick={""}>External</button>
+                <Link to="/examcell2">
+                    <button className="typbtn">Internal</button>
+                </Link>
+                <Link to="/examcell2">
+                    <button className="typbtn">External</button>
+                </Link>
             </div>
             <img id='excelg' src="src/Assets/Logo.png" alt="Logo" />
         </div>

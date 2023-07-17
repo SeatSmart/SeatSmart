@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import "./ex3.css"
+import { Link } from 'react-router-dom';
 const Examcell3 = () => {
     var vacant_cs1=[];var vacant_cs2=[];var vacant_ee1=[];var vacant_ee2=[];var vacant_ec1=[];var vacant_ec2=[];var vacant_ce1=[];var vacant_ce2=[];var vacant_me1=[];var vacant_me2=[];
     const [inputValues, setInputValues] = useState('');
@@ -447,6 +448,9 @@ const Examcell3 = () => {
                         </tr>
                     </table>
                     <button type='submit' className='classlabel'>Submit</button>
+                    <Link to='/examcell4'>
+                        <button type='submit' className='classlabel'>Continue</button>
+                    </Link>
                 </form>
 
             </div>

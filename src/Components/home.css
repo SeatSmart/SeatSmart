@@ -5,29 +5,56 @@
 }
 .Logo{
     /* text-align: center; */
+    position: relative;
     display: grid;
+    flex-direction: column;
     place-items: center;
     justify-content: center;
     height: 100vh;
     /* margin-top: 10%; */
 }
-.Logo img{
+/* .Logo img{
     padding: 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
     height: auto;
-}
-a{
-    text-decoration: none;
-    
+} */
+.logo-container {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+.button{
+    margin: 2vw 70vw;
+    background-color: transparent;
+    border: none;
+    font-size: large;
     font-weight: bold;
+    width: 2vw;
+}
+.button:hover{
+    font-size: larger;
+    cursor: pointer;
+    transition: 0.2s;
+    
     
 }
-#ExamCell{
-    color: black;
+#examcell{
+    color: #2D2D2D;
 }
 #invigilator{
     color: #FF9B26;
-    align-items: right;
+    margin-left: 1rem;
 }
