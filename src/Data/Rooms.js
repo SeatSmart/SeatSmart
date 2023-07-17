@@ -1,4 +1,4 @@
-export const RoomData = [
+const RoomData = [
     {
         id: 1,
         name: "A301",
@@ -71,3 +71,4 @@ export const RoomData = [
     },
 
 ]
+module.exports = RoomData;
