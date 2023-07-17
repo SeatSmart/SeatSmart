@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ex4.css';
 import { useState } from 'react';
 
@@ -7,7 +7,7 @@ const Examcell4 = () => {
 
     const fetchRoomData = async () => {
         try {
-            const response = await fetch('http://localhost:3001/api/rooms'); // Assumes your backend server is running on the same host as the React app
+            const response = await fetch('http://localhost:3001/api/rooms'); 
           if (response.ok) {
             const roomData = await response.json();
             setRooms(roomData);
