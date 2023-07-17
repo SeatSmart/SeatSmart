@@ -114,6 +114,10 @@ const Examcell4 = () => {
                     {item1.name}
                 </button>
                 ))}
+
+            </div>
+            <div className="continue">
+                <button className="continue-button">Continue</button>
             </div>
         </div>
      );
