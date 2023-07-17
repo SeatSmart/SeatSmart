@@ -3,8 +3,14 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 let RoomData = require('./src/Data/Rooms');
 let HallData = require('./src/Data/Halls');
+
+const path = require('path');
 const app = express();
 const port = 3001;
+
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'index.html'));
+//   });
 
 app.use(bodyParser.json());
 app.use(cors());
