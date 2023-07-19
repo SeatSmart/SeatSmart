@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 let RoomData = require('./src/Data/Rooms');
 let HallData = require('./src/Data/Halls');
-
+let ClassData = require('./src/Data/Classes');
 const path = require('path');
 const app = express();
 const port = 3001;
@@ -38,6 +38,18 @@ app.put('/api/halls',(req,res) =>{
     HallData = updatedData1;
     res.json({message: 'Data updated successfully!'});
 });
+
+app.get('/api/classes', (req, res) => {
+    res.json(ClassData);
+});
+
+app.put('/api/classes',(req,res) =>{
+    const updatedData2 = req.body;
+    ClassData = updatedData2;
+    res.json({message: 'Data updated successfully!'});
+});
+
+
 
 app.listen(port, () => {
     console.log(`Server listening on the port::${port}`);
