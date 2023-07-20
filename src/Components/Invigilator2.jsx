@@ -25,18 +25,20 @@ const Invigilator2 = () =>{
     return(
         <div className="inv2">
             <h1 className='heading'>Invigilator</h1>
-            <h2 className='roomno'>Room No: {roomData.roomno}</h2>
+            <h2 className='roomno'>Room No: A301</h2>
             {roomData.cs1.map((roll, index) => {
         return (
           <button
-            className={`roll-btn ${clicked === roll ? "checked" : ""}`}
+            className={`roll-btn ${selectedRolls.includes(roll) ? "checked" : ""}`}
             key={index}
             onClick={() => handleButtonClick(roll)}
           >
             {roll}
           </button>
+          
         );
       })}
+      <button className='continue-button'>Submit</button>
         </div>
     )
 }
