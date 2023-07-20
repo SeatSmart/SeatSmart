@@ -1,0 +1,29 @@
+.inv2{
+    background-color: #2D2D2D;
+    height: 100vh;
+    display: block;
+    background-size: 100%;
+    overflow: auto;
+}
+.heading{
+    margin-left: 70vw;
+    color: #FF9B26;
+}
+.roll-btn{
+    font-weight: bold;
+    padding: 1vh 5vw;
+    background-color: #2D2D2D;
+    color: #B63CF8;
+    border-radius: 30px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+.roll-btn:hover{
+    transition: 0.2s;
+    box-shadow: #2D2D2D 1px 1px 1px 1px;
+}
+.checked{
+    transition: 0.2s;
+    background-color: #B63CF8;
+    color: #2D2D2D;
+}

@@ -8,13 +8,13 @@ let HallData = [
     {
         id: 2,
         name: "Civil Hall",
-        capacity: 100,
+        capacity: 62,
         selected: false
     },
     {
         id: 3,
         name: "Mech Hall",
-        capacity: 100,
+        capacity: 110,
         selected: false
     }
 ]

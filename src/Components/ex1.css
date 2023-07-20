@@ -3,6 +3,7 @@
     height: 100vh;
     display: flex;
     overflow: auto;
+    color: #2D2D2D;
     
 }
 h1{

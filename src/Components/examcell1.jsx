@@ -8,8 +8,6 @@ const Examcell1 = () => {
             
             <div className="extype">
                 <h2>Exam Type</h2>
-                <br>
-                </br>
                 <Link to="/examcell2">
                     <button className="typbtn">Internal</button>
                 </Link>

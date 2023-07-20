@@ -4,7 +4,7 @@ let classData=[
         name:"CS1",
         capacity: '',
         vacant:[],
-        selected: true
+        selected: false
     },
     {
         id:2,
