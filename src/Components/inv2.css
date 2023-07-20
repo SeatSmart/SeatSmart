@@ -4,10 +4,11 @@
     display: block;
     background-size: 100%;
     overflow: auto;
+    padding-left: 0.8vw;
 }
 
 .heading {
-    margin-left: 70vw;
+    margin-left: 75vw;
     color: #FF9B26;
 }
 
