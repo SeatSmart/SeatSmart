@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './ex4.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Examcell4 = () => {
     const [rooms, setRooms] = useState([]);
@@ -116,7 +117,9 @@ const Examcell4 = () => {
                 ))}
             </div>
             <div className="continue">
+              <Link to='/examcell5'> 
                 <button className="continue-button">Continue</button>
+              </Link>
             </div>
         </div>
      );

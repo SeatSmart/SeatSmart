@@ -68,7 +68,7 @@ const Invigilator2 = () =>{
           
         );
       })} */}
-      <button className='continue-button'>Submit</button>
+      <button className='continue1-button'>Submit</button>
         </div>
     )
 }

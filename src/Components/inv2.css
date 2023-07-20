@@ -32,7 +32,7 @@
     color: #2D2D2D;
 }
 
-.continue-button {
+.continue1-button {
     font-size: larger;
     font-weight: bold;
     padding: 1vh 5vw;
@@ -43,7 +43,7 @@
     margin-left: 75vw;
 }
 
-.continue-button:hover {
+.continue1-button:hover {
     background-color: #EE8100;
     color: black;
     transition: 0.5s;
