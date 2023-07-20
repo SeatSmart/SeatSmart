@@ -10,6 +10,7 @@ import Excell2 from './Components/excel2';
 import Excell3 from './Components/excel3';
 import Invigilator1 from './Components/Invigilator1';
 import Invigilator2 from './Components/Invigilator2';
+import Examcell5 from './Components/examcell5';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/examcell4" element={<Examcell4/>} />
         <Route path='/invigilator1' element ={<Invigilator1/>}/>
         <Route path='/invigilator2' element={<Invigilator2/>}/>
+        <Route path='/examcell5' element={<Examcell5/>}/>
       </Routes>
   </Router>
 );
